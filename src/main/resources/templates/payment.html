@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Payment</title>
+</head>
+<body>
+    <h1>Payment</h1>
+
+    <form>
+        <input type="button"
+               value="Suggest payment"
+               onclick='location.href="/payment/pay"'>
+    </form>
+
+    <input type="button" value="Status" onclick='location.href="/payment/status"'>
+    <p th:text="${response.getStatus()}"/>
+</body>
+</html>
