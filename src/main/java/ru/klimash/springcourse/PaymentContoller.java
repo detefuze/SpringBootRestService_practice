@@ -32,6 +32,12 @@ public class PaymentContoller {
         return main_response;
     }
 
+    @GetMapping("/code")
+    @ResponseBody
+    public Integer showCode() {
+        return main_response.getCode();
+    }
+
     @PostMapping( "payment/suggest")
     public String pay(@RequestParam String key)
     {
